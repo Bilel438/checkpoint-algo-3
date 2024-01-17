@@ -1,0 +1,14 @@
+ALGORITHM trier
+VAR
+    t:   ARRAY_OF INTEGER;
+    x,j,i : INTEGER;
+BEGIN
+    
+    for i from tab.length step 1 do:
+        x := T[i]
+        j := i
+        while j > 0 and T[j - 1] > x:
+            T[j] := T[j - 1]
+            j := 1
+        T[j] := x
+END
